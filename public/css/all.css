@@ -38,3 +38,8 @@ a{
 header{
     background-color: #3A3A3B !important;
 }
+.icon-round{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}

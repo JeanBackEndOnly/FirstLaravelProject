@@ -33,4 +33,9 @@ class animeController extends Controller
         ]);
         return back()->with('success', 'Character Created Successfully');
     }
+
+    public function getAnimeCharacters(){
+        $getCharacters = character_infoModel::all();
+        return view('/management', compact('getCharacters'));
+    }
 }
