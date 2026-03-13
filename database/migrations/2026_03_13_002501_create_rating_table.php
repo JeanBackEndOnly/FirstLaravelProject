@@ -1,3 +1,4 @@
+
 <?php
 
 use Illuminate\Database\Migrations\Migration;
@@ -11,13 +12,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('character_info', function (Blueprint $table) {
+        Schema::create('rating', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('anime');
-            $table->string('description');
-            $table->string('goals');
-            $table->string('icon');
+            $table->Integer('rating');
+            $table->text('review')->nullable();
+            $table->foreignId('character_id')
+                ->constrained('character_info')
+                ->onDelete('cascade');
             $table->timestamps();
         });
     }
@@ -27,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('character_info');
+        Schema::dropIfExists('rating');
     }
 };

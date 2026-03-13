@@ -1,0 +1,40 @@
+html{
+    background-color: #161618 !important;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    height: 100vh;
+    margin: 0;
+    overflow-y: auto;
+    overflow-x: hidden !important;
+}
+body{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    width: 100%;
+    margin: 0;
+    background: transparent !important;
+    flex-wrap: wrap;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none !important;
+}
+.active{
+    color: rgb(220,50,50) !important;
+}
+.nav{
+    color: white;
+    border-bottom: solid 2px transparent;
+    transition: 0.5s ease;
+}
+.nav:hover{
+    color: rgb(220,50,50) !important;
+    border-bottom: solid 2px rgb(220,50,50);
+}
+header{
+    background-color: #3A3A3B !important;
+}

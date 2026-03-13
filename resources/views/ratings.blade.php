@@ -1,0 +1,3 @@
+@include('navigations')
+
+@include('footer')
